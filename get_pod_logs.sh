@@ -25,6 +25,7 @@ done
 
 zip_file="pod_logs.zip"
 zip -r "$zip_file" "$logs_directory"
+rm -rf "$logs_directory"
 
 echo "Log files have been exported and stored in $zip_file"
 
